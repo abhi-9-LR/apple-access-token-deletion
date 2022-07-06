@@ -49,6 +49,7 @@ if (webhookResponse) {
                     stackTrace: response.error.stack,
                     requestPath: element.Url
                 };
+                console.log(errorResponse);
 
                 res.status(errorResponse.statusCode).json(errorResponse)
             } else {
@@ -58,6 +59,7 @@ if (webhookResponse) {
                     statusCode: response.status || 200
 
                 }
+                console.log(successResponse);
                 res.status(successResponse.statusCode).json(successResponse)
             }
         });

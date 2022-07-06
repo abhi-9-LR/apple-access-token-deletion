@@ -16,6 +16,9 @@ Create a `.env` file in root directory and add following constant
  2. Create an environment variable `client_secret` and add the apple client_secret, which will be used in apple revoke token API call.
  For insights on how to create apple client_secret, please see https://github.com/LoginRadius/apple-client-secret-generator
 
+e.g 
+![](assets/env.png)
+
 Run this command to start the server
 ```bash
 npm start
